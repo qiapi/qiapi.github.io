@@ -2,7 +2,7 @@ $(document).ready(function () {
     var slide = $('.slider');
     slide.slider({full_width: true, height: 290});
     $("#about").show();
-    var tabhosts = $(".tech a");
+    var tabhosts = $(".mainContain a");
     tabhosts.each(function () {
         //$($(this).attr("href")).hide();
 

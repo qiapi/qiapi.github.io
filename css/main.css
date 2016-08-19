@@ -41,5 +41,16 @@
   width: 60%;
 }
 
+#homeFood a div img{
+
+}
+
+.foodContent{
+  display: none;
+  padding: 15px;
+}
+
+
+
 
 
