@@ -1,0 +1,119 @@
+body,div,ul,li{
+    margin: 0px;
+    padding: 0px;
+}
+
+footer.page-footer{
+    background-color: #9575cd;
+}
+a{
+    text-decoration: none;
+}
+
+/*恰皮logp*/
+.mylogo{
+    background-color: #b39ddb;
+    text-align: center;
+    height: 100px;
+}
+
+ul.side-nav.fixed li .mylogo_text{
+    color:white;
+    font-size: 50px;
+    font-family: 黑体;
+    line-height: 100px;
+}
+
+ul.side-nav.fixed li .mylogo_text:hover{
+    cursor: pointer;
+    background-color: #d1c4e9;
+}
+
+/*解决文字溢出问题*/
+.text_overflow{
+    width:27em;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    -o-text-overflow:ellipsis;
+    overflow:hidden;
+}
+
+/*搜索框放大镜样式*/
+.material-icons{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+/*搜索框*/
+.search-wrapper{
+    margin: 0 12px;
+    transition:margin 0.25s ease;
+}
+.search{
+    line-height: 48px;
+}
+#search{
+    height: 45px;
+    width: 150px;
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 5px 0 0 0;
+    padding: 0 15px 0 15px;
+    border: 0;
+}
+
+ul li.search:hover{
+    background-color: white;
+}
+
+#search:focus{
+    border-bottom: none;
+    box-shadow: none;
+}
+.nav li{
+    line-height: 50px;
+    width: 240px;
+}
+
+.nav li:hover{
+    cursor: pointer;
+    background-color: #d1c4e9;
+}
+
+.nav .search .card{
+    padding: 0;
+}
+
+.nav{
+    transform:translateX(0%);
+}
+
+.button-collapse{
+    display: none;
+}
+
+.container{
+    width: 90%;
+}
+
+#donate{
+    width: 80px;
+    height: 80px;
+}
+
+#dropdown2 li a{
+    color: #673ab7;
+}
+
+@media only screen and (max-width: 992px)
+{
+    .nav{
+        transition:translateX 2s;
+    }
+
+    .button-collapse{
+        display: block;
+    }
+}

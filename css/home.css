@@ -1,0 +1,48 @@
+body,div,a{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(234,231,245);
+}
+
+.wrap{
+    margin-top:80px;
+}
+
+.row div img{
+    width: 100%;
+}
+
+#logo{
+    padding: 0 0;
+    margin: 0 0;
+}
+
+.introduction{
+    background-color: whitesmoke;
+}
+
+.introduction h1{
+    margin-left: 20px;
+}
+
+.introduction p{
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.introduction span{
+    margin-left: 20px;
+    font-size: 20px;
+    color: #757575;
+}
+
+.btn-large{
+    border-radius: 2px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
