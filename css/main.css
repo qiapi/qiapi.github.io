@@ -41,13 +41,23 @@
   width: 60%;
 }
 
-#homeFood a div img{
-
-}
-
 .foodContent{
   display: none;
   padding: 15px;
+}
+
+.horizontal{
+  padding: 0px;
+}
+
+div.card-image.col.s12{
+  padding: 0px;
+}
+
+.card-stacked h1{
+  font-size: 2rem;
+  text-align: center;
+  color: #ffb300;
 }
 
 
