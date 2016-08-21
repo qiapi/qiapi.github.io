@@ -55,9 +55,12 @@ div.card-image.col.s12{
 }
 
 .card-stacked h1{
-  font-size: 2rem;
   text-align: center;
-  color: #ffb300;
+  color: #616161;
+}
+
+.pagination li.active{
+  background-color: #ffb300;
 }
 
 
