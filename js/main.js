@@ -11,7 +11,6 @@ $(document).ready(function () {
             tabhosts.each(function () {
                 $($(this).attr("href")).hide();
             });
-
             $($(this).attr("href")).show();
         });
     });
@@ -39,18 +38,6 @@ $(document).ready(function () {
 
 });
 
-/*var page = $(".foodPage a");
-page.each(function () {
-    //$($(this).attr("href")).hide();
-
-    $(this).click(function (event) {
-        event.preventDefault();
-        page.each(function () {
-            $($(this).attr("href")).hide();
-        });
-        $($(this).attr("href")).show();
-    });
-});*/
-
 $(".button-collapse").sideNav();
+
 

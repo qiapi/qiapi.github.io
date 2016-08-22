@@ -63,6 +63,24 @@ div.card-image.col.s12{
   background-color: #ffb300;
 }
 
+.materialboxed{
+  display: none;
+}
+
+.card-reveal{
+  left: 0;
+}
+
+.collection a.collection-item{
+  color: black;
+}
+
+.translate_content{
+  padding:15px;
+  display:none;
+}
+
+
 
 
 
