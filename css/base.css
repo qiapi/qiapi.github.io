@@ -115,5 +115,13 @@ ul li.search:hover{
 
     .button-collapse{
         display: block;
+        height: 100%;
+        width: 100%;
+        background-color: #9575cd;
+        margin-top: 5px;
+    }
+
+    .button-collapse:hover{
+        background-color: #b39ddb;
     }
 }
