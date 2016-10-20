@@ -8,6 +8,7 @@ myApp.onPageInit('about',function(page){
 var newContent = '<div class="page" data-page="my-page">' +
                         '<div class="page-content">' +
                           '<p>Here comes new page</p>' +
+                          '<a href="index.html" class="back"> Go back to home page </a>	'+
                         '</div>' +
                       '</div>';
 mainView.router.loadContent(newContent);
