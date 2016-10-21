@@ -1,103 +1,59 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>my app</title>
-	<meta charset="utf-8">
-	<!--移动设备尺寸-->
-	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalele=no,minimal-ui">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<!--主题颜色-->
-	<meta name="theme-color" content="#2196f3">
-	<!--使用安卓CSS主题样式-->
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS, Material Theme -->
 	<link rel="stylesheet" type="text/css" href="dist/css/framework7.material.min.css">
 	<!--android颜色样式-->
 	<link rel="stylesheet" type="text/css" href="dist/css.framework7.material.colors.min.css">
 	<!--自定义样式-->
 	<link rel="stylesheet" type="text/css" href="my-app.css">
-</head>
-<body>
-<div class="views">
-<!--主视图-->
-	<div class="view view-main">
-		<div class="pages navbar-fixed toolbar-fixed">
-			<div class="navbar">
-				<div class="navbar-inner">
-					<div class="left adjust"><a href="#about" class="link">link</a></div>
-					<div class="center">Awesome app</div>
-					<div class="right"><a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a></div>
-				</div>
-				<div class="subnavbar">
-					<div class="buttons-row">
-						<a href="#tab1" class="button tab-link active">Tab 1</a>
-						<a href="#tab2" class="button tab-link">Tab 2</a>
-						<a href="#tab3" class="button tab-link">Tab 3</a>
-					</div>
-				</div>
-			</div>
-			<div data-page="index" class="page with-subnavbar">
-				<div class="page-content hide-bars-on-scroll">
-				<div class="tabs">
-					<div id="tab1" class="tab active">
-						<div class="content-block">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nibh felis. Nunc consequat diam et tellus tempor gravida. Donec hendrerit aliquet risus, ut tempor purus dictum sit amet. Integer sit amet lacus eget ipsum pulvinar interdum. Proin semper turpis sed placerat dapibus. Sed iaculis id nibh a viverra. Sed vitae tellus sed purus lacinia dignissim. Aenean sagittis interdum leo in molestie. Aliquam sodales in diam eu consectetur. Sed posuere a orci id imperdiet.</p>
-							<p>Donec et nulla auctor massa pharetra adipiscing ut sit amet sem. Suspendisse molestie velit vitae mattis tincidunt. Ut sit amet quam mollis, vulputate turpis vel, sagittis felis. Vestibulum ornare ut eros vitae adipiscing. Vestibulum volutpat justo enim, ullamcorper vulputate sapien lacinia vel. Integer sed justo ultrices augue </p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nibh felis. Nunc consequat diam et tellus tempor gravida. Donec hendrerit aliquet risus, ut tempor purus dictum sit amet. Integer sit amet lacus eget ipsum pulvinar interdum. Proin semper turpis sed placerat dapibus. Sed iaculis id nibh a viverra. Sed vitae tellus sed purus lacinia dignissim. Aenean sagittis interdum leo in molestie. Aliquam sodales in diam eu consectetur. Sed posuere a orci id imperdiet.</p>
-							<p>Donec et nulla auctor massa pharetra adipiscing ut sit amet sem. Suspendisse molestie velit vitae mattis tincidunt. Ut sit amet quam mollis, vulputate turpis vel, sagittis felis. Vestibulum ornare ut eros vitae adipiscing. Vestibulum volutpat justo enim, ullamcorper vulputate sapien lacinia vel. Integer sed justo ultrices augue </p>
-						</div>
-					</div>
-					<div id="tab2" class="tab">
-						<div class="content-block">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nibh felis. Nunc consequat diam et tellus tempor gravida. Donec hendrerit aliquet risus, ut tempor purus dictum sit amet. Integer sit amet lacus eget ipsum pulvinar interdum. Proin semper turpis sed placerat dapibus. Sed iaculis id nibh a viverra. Sed vitae tellus sed purus lacinia dignissim. Aenean sagittis interdum leo in molestie. Aliquam sodales in diam eu consectetur. Sed posuere a orci id imperdiet.</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nibh felis. Nunc consequat diam et tellus tempor gravida. Donec hendrerit aliquet risus, ut tempor purus dictum sit amet. Integer sit amet lacus eget ipsum pulvinar interdum. Proin semper turpis sed placerat dapibus. Sed iaculis id nibh a viverra. Sed vitae tellus sed purus lacinia dignissim. Aenean sagittis interdum leo in molestie. Aliquam sodales in diam eu consectetur. Sed posuere a orci id imperdiet.</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nibh felis. Nunc consequat diam et tellus tempor gravida. Donec hendrerit aliquet risus, ut tempor purus dictum sit amet. Integer sit amet lacus eget ipsum pulvinar interdum. Proin semper turpis sed placerat dapibus. Sed iaculis id nibh a viverra. Sed vitae tellus sed purus lacinia dignissim. Aenean sagittis interdum leo in molestie. Aliquam sodales in diam eu consectetur. Sed posuere a orci id imperdiet.</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nibh felis. Nunc consequat diam et tellus tempor gravida. Donec hendrerit aliquet risus, ut tempor purus dictum sit amet. Integer sit amet lacus eget ipsum pulvinar interdum. Proin semper turpis sed placerat dapibus. Sed iaculis id nibh a viverra. Sed vitae tellus sed purus lacinia dignissim. Aenean sagittis interdum leo in molestie. Aliquam sodales in diam eu consectetur. Sed posuere a orci id imperdiet.</p>
-						</div>
-					</div>
-					<div id="tab3" class="tab">
-						<div class="content-block">
-							<p>Donec et nulla auctor massa pharetra adipiscing ut sit amet sem. Suspendisse molestie velit vitae mattis tincidunt. Ut sit amet quam mollis, vulputate turpis vel, sagittis felis. Vestibulum ornare ut eros vitae adipiscing. Vestibulum volutpat justo enim, ullamcorper vulputate sapien lacinia vel. Integer sed justo ultrices augue </p>
-							<p>Donec et nulla auctor massa pharetra adipiscing ut sit amet sem. Suspendisse molestie velit vitae mattis tincidunt. Ut sit amet quam mollis, vulputate turpis vel, sagittis felis. Vestibulum ornare ut eros vitae adipiscing. Vestibulum volutpat justo enim, ullamcorper vulputate sapien lacinia vel. Integer sed justo ultrices augue </p>
-							<p>Donec et nulla auctor massa pharetra adipiscing ut sit amet sem. Suspendisse molestie velit vitae mattis tincidunt. Ut sit amet quam mollis, vulputate turpis vel, sagittis felis. Vestibulum ornare ut eros vitae adipiscing. Vestibulum volutpat justo enim, ullamcorper vulputate sapien lacinia vel. Integer sed justo ultrices augue </p>
-							<p>Donec et nulla auctor massa pharetra adipiscing ut sit amet sem. Suspendisse molestie velit vitae mattis tincidunt. Ut sit amet quam mollis, vulputate turpis vel, sagittis felis. Vestibulum ornare ut eros vitae adipiscing. Vestibulum volutpat justo enim, ullamcorper vulputate sapien lacinia vel. Integer sed justo ultrices augue </p>
-						</div>
-					</div>
-				</div>
-					<a href="#about">go to about page</a>
-					<a href="#second">go to second page</a>
-				</div>
-			</div>
-			<div class="toolbar toolbar-bottom">
-				<div class="toolbar-inner">
-					<a href="#tab1" class="tab-link link active">
-						<i class="icon demo-icon-1"></i>
-					</a>
-					<a href="#tab2" class="tab-link link">
-						<i class="icon demo-icon-2"></i>
-					</a>
-					<a href="#tab3" class="tab-link link">
-						<i class="icon demo-icon-3"></i>
-					</a>
-					<a href="#tab4" class="tab-link link">
-						<i class="icon demo-icon-4"></i>
-					</a>
-				</div>
-			</div>
-			<div class="page cached" data-page="about">
-				<div class="page-content">
-					<p>here is about!</p>
-					<a href="#index" class="back">go back to index</a>
-				</div>
-			</div>
-			<div class="page cached" data-page="second">
-				<div class="page-content">
-					<p>here is second!</p>
-					<a href="#index" class="back">go back to index</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+  </head>
+  <body>
+    <!-- Views -->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Pages container, because we use fixed navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-fixed toolbar-fixed">
+          <!-- Page, "data-page" contains page name -->
+          <div data-page="index" class="page">
+ 
+            <!-- Top Navbar. In Material theme it should be inside of the page-->
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="center">Awesome App</div>
+              </div>
+            </div>
+ 
+            <!-- Bottom Toolbar. In Material theme it should be inside of the page-->
+            <div class="toolbar">
+              <div class="toolbar-inner">
+                <!-- Toolbar links -->
+                <a href="#" class="link">Link 1</a>
+                <a href="#" class="link">Link 2</a>
+              </div>
+            </div>
+ 
+            <!-- Scrollable page content -->
+            <div class="page-content">
+              <p>Page content goes here</p>
+              <!-- Link to another page -->
+              <a href="about.html">About app</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
 <script type="text/javascript" src="dist/js/framework7.min.js"></script>
 <script type="text/javascript" src="my-app.js"></script>
-</body>
-</html>
+  </body>
+</html> 
