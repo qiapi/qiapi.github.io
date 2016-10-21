@@ -6,7 +6,12 @@ var mainView = myApp.addView('.view-main',{
 
 myApp.onPageInit('about',function(page){
 	myApp.alert("about 页面加载完毕");
-})
+});
+
+var mySearchbar = app.searchbar('.searchbar', {
+    searchList: '.list-block-search',
+    searchIn: '.item-title'
+});
 /*var newContent = '<div class="page" data-page="my-page">' +
                         '<div class="page-content">' +
                           '<p>Here comes new page</p>' +
