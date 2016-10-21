@@ -8,7 +8,7 @@ myApp.onPageInit('about',function(page){
 	myApp.alert("about 页面加载完毕");
 });
 
-var mySearchbar = app.searchbar('.searchbar', {
+var mySearchbar = myApp.searchbar('.searchbar', {
     searchList: '.list-block-search',
     searchIn: '.item-title'
 });
