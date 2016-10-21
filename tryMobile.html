@@ -24,44 +24,46 @@
 				<div class="navbar">
 					<div class="navbar-inner">
 						<div class="left adjust"><a href="#about" class="link">link</a></div>
-						<div class="center">Awesome app</div>
+						<div class="center">Your Kitchens</div>
 						<div class="right"><a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a></div>
 					</div>
 				</div>
-				<form class="searchbar">
+				<form class="searchbar searchbar-init" data-search-list=".list-block-search" data-search-in=".item-title">
 					<div class="searchbar-input">
 						<input type="search" placeholder="Search">
 						<a href="#" class="searchbar-clear"></a>
 					</div>
 					<a href="#" class="searchbar-cancel">Cancel</a>
 				</form>
+				<div class="searchbar-overlay"></div>
 				<div class="page-content">
-				<div class="tabs">
-					<div id="tab1" class="tab active">
-						<div class="content-block">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nibh felis. Nunc consequat diam et tellus tempor gravida. Donec hendrerit aliquet risus, ut tempor purus dictum sit amet. Integer sit amet lacus eget ipsum pulvinar interdum. Proin semper turpis sed placerat dapibus. Sed iaculis id nibh a viverra. Sed vitae tellus sed purus lacinia dignissim. Aenean sagittis interdum leo in molestie. Aliquam sodales in diam eu consectetur. Sed posuere a orci id imperdiet.</p>
-							<p>Donec et nulla auctor massa pharetra adipiscing ut sit amet sem. Suspendisse molestie velit vitae mattis tincidunt. Ut sit amet quam mollis, vulputate turpis vel, sagittis felis. Vestibulum ornare ut eros vitae adipiscing. Vestibulum volutpat justo enim, ullamcorper vulputate sapien lacinia vel. Integer sed justo ultrices augue </p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nibh felis. Nunc consequat diam et tellus tempor gravida. Donec hendrerit aliquet risus, ut tempor purus dictum sit amet. Integer sit amet lacus eget ipsum pulvinar interdum. Proin semper turpis sed placerat dapibus. Sed iaculis id nibh a viverra. Sed vitae tellus sed purus lacinia dignissim. Aenean sagittis interdum leo in molestie. Aliquam sodales in diam eu consectetur. Sed posuere a orci id imperdiet.</p>
-							<p>Donec et nulla auctor massa pharetra adipiscing ut sit amet sem. Suspendisse molestie velit vitae mattis tincidunt. Ut sit amet quam mollis, vulputate turpis vel, sagittis felis. Vestibulum ornare ut eros vitae adipiscing. Vestibulum volutpat justo enim, ullamcorper vulputate sapien lacinia vel. Integer sed justo ultrices augue </p>
-						</div>
+					<div class="content-block searchbar-not-found">
+						nothing found
 					</div>
-					<div id="tab2" class="tab">
-						<div class="content-block">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nibh felis. Nunc consequat diam et tellus tempor gravida. Donec hendrerit aliquet risus, ut tempor purus dictum sit amet. Integer sit amet lacus eget ipsum pulvinar interdum. Proin semper turpis sed placerat dapibus. Sed iaculis id nibh a viverra. Sed vitae tellus sed purus lacinia dignissim. Aenean sagittis interdum leo in molestie. Aliquam sodales in diam eu consectetur. Sed posuere a orci id imperdiet.</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nibh felis. Nunc consequat diam et tellus tempor gravida. Donec hendrerit aliquet risus, ut tempor purus dictum sit amet. Integer sit amet lacus eget ipsum pulvinar interdum. Proin semper turpis sed placerat dapibus. Sed iaculis id nibh a viverra. Sed vitae tellus sed purus lacinia dignissim. Aenean sagittis interdum leo in molestie. Aliquam sodales in diam eu consectetur. Sed posuere a orci id imperdiet.</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nibh felis. Nunc consequat diam et tellus tempor gravida. Donec hendrerit aliquet risus, ut tempor purus dictum sit amet. Integer sit amet lacus eget ipsum pulvinar interdum. Proin semper turpis sed placerat dapibus. Sed iaculis id nibh a viverra. Sed vitae tellus sed purus lacinia dignissim. Aenean sagittis interdum leo in molestie. Aliquam sodales in diam eu consectetur. Sed posuere a orci id imperdiet.</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nibh felis. Nunc consequat diam et tellus tempor gravida. Donec hendrerit aliquet risus, ut tempor purus dictum sit amet. Integer sit amet lacus eget ipsum pulvinar interdum. Proin semper turpis sed placerat dapibus. Sed iaculis id nibh a viverra. Sed vitae tellus sed purus lacinia dignissim. Aenean sagittis interdum leo in molestie. Aliquam sodales in diam eu consectetur. Sed posuere a orci id imperdiet.</p>
-						</div>
+					<div class="list-block list-block-search searchbar-found">
+						<ul>
+							<li class="item-content">
+								<div class="item-inner">
+									<div class="item-title">chicken</div>
+								</div>
+							</li>
+							<li class="item-content">
+								<div class="item-inner">
+									<div class="item-title">pork</div>
+								</div>
+							</li>
+							<li class="item-content">
+								<div class="item-inner">
+									<div class="item-title">mutton</div>
+								</div>
+							</li>
+							<li class="item-content">
+								<div class="item-inner">
+									<div class="item-title">beef</div>
+								</div>
+							</li>
+						</ul>
 					</div>
-					<div id="tab3" class="tab">
-						<div class="content-block">
-							<p>Donec et nulla auctor massa pharetra adipiscing ut sit amet sem. Suspendisse molestie velit vitae mattis tincidunt. Ut sit amet quam mollis, vulputate turpis vel, sagittis felis. Vestibulum ornare ut eros vitae adipiscing. Vestibulum volutpat justo enim, ullamcorper vulputate sapien lacinia vel. Integer sed justo ultrices augue </p>
-							<p>Donec et nulla auctor massa pharetra adipiscing ut sit amet sem. Suspendisse molestie velit vitae mattis tincidunt. Ut sit amet quam mollis, vulputate turpis vel, sagittis felis. Vestibulum ornare ut eros vitae adipiscing. Vestibulum volutpat justo enim, ullamcorper vulputate sapien lacinia vel. Integer sed justo ultrices augue </p>
-							<p>Donec et nulla auctor massa pharetra adipiscing ut sit amet sem. Suspendisse molestie velit vitae mattis tincidunt. Ut sit amet quam mollis, vulputate turpis vel, sagittis felis. Vestibulum ornare ut eros vitae adipiscing. Vestibulum volutpat justo enim, ullamcorper vulputate sapien lacinia vel. Integer sed justo ultrices augue </p>
-							<p>Donec et nulla auctor massa pharetra adipiscing ut sit amet sem. Suspendisse molestie velit vitae mattis tincidunt. Ut sit amet quam mollis, vulputate turpis vel, sagittis felis. Vestibulum ornare ut eros vitae adipiscing. Vestibulum volutpat justo enim, ullamcorper vulputate sapien lacinia vel. Integer sed justo ultrices augue </p>
-						</div>
-					</div>
-				</div>
 				<div class="toolbar tabbar" style="top:auto;bottom:0">
 					<div class="toolbar-inner">
 						<a href="#tab1" class="tab-link link active" style="color:white">

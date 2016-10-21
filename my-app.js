@@ -4,7 +4,10 @@ var mainView = myApp.addView('.view-main',{
 	domCache:true,
 	dynamicNavbar:true
 });
-
+var mySearchbar = myApp.searchbar('.searchbar',{
+	searchList:'.list-block-search',
+	searchIn:'.item-title'
+})
 /*var newContent = '<div class="page" data-page="my-page">' +
                         '<div class="page-content">' +
                           '<p>Here comes new page</p>' +
