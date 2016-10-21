@@ -2,6 +2,9 @@
 	margin-right: auto;
 }
 
+.navbar-fixed .toolbar{
+	top:0;
+}
 .toolbar {
 	top: auto;
 	bottom: 0;
