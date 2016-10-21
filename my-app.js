@@ -1,7 +1,16 @@
 var myApp = new Framework7();
 var $$ = Dom7;
 var mainView = myApp.addView('.view-main',{
-	domCache:true
+	domCache:true;
+	dynamicNavbar:true;
+});
+
+$('.hide-navbar').on('click',function() {
+	mainView.hideNavbar();
+});
+
+$('.show-navbar').on('click',function() {
+	mainView.showNavbar();
 });
 
 myApp.onPageInit('about',function(page){
