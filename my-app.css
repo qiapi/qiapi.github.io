@@ -3,10 +3,7 @@
 }
 
 .toolbar {
-	top:auto;
+	top: auto;
 	bottom: 0;
-}
-
-.navbar-fixed {
-	top:0;
+	!important;
 }
