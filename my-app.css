@@ -6,3 +6,7 @@
 	top:auto;
 	bottom: 0;
 }
+
+.navbar-fixed {
+	top:0;
+}
