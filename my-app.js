@@ -5,22 +5,6 @@ var mainView = myApp.addView('.view-main',{
 	dynamicNavbar:true
 });
 
-$('.hide-navbar').on('click',function() {
-	mainView.hideNavbar();
-});
-
-$('.show-navbar').on('click',function() {
-	mainView.showNavbar();
-});
-
-myApp.onPageInit('about',function(page){
-	myApp.alert("about 页面加载完毕");
-});
-
-var mySearchbar = myApp.searchbar('.searchbar', {
-    searchList: '.list-block-search',
-    searchIn: '.item-title'
-});
 /*var newContent = '<div class="page" data-page="my-page">' +
                         '<div class="page-content">' +
                           '<p>Here comes new page</p>' +
