@@ -2,7 +2,18 @@
 	margin-right: auto;
 }
 
-.searchbar-cancel {
-	color:white;
-	margin: auto;
+.searchbar-input input {
+	width: 100%;
+}
+
+body.with-panel-left-cover .statusbar-overlay {
+    background-color: #333;
+}
+
+div[class*="col-"] {
+	background-color: #eee;
+	text-align: center;
+	color: #000;
+	border: 1px solid #ddd;
+	padding: 5px;
 }

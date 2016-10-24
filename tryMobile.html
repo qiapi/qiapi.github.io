@@ -15,12 +15,28 @@
 	<!--自定义样式-->
 	<link rel="stylesheet" type="text/css" href="my-app.css">
 </head>
-<body class="theme-red">
+<body class="theme-green">
+<div class="panel-overlay"></div>
+<div class="panel panel-left panel-reveal">
+	<p>Left panel content here</p>
+	<p><a href="#" class="close-panel">close me</a></p>
+</div>
+<div class="panel panel-right panel-cover">
+	<p>Right panel content here</p>
+	<p><a href="#" class="panel-close">close me</a></p>
+</div>
 <div class="views">
 <!--主视图-->
 	<div class="view view-main">
 		<div class="pages navbar-fixed toolbar-fixed">
 			<div data-page="index" class="page">
+				<div class="popup popup-about">
+					<div class="content-block">
+						<p>about</p>
+						<p><a href="#" class="close-popup">close popup</a></p>
+						<p>haha</p>
+					</div>
+				</div>
 				<div class="navbar">
 					<div class="navbar-inner">
 						<div class="left adjust"><a href="#about" class="link">link</a></div>
@@ -33,10 +49,60 @@
 						<input type="search" placeholder="Search">
 						<a href="#" class="searchbar-clear"></a>
 					</div>
-					<a href="#" class="searchbar-cancel">Cancel</a>
 				</form>
 				<div class="searchbar-overlay"></div>
 				<div class="page-content">
+					<div class="content-block">
+						<p><a href="#" class="open-panel" data-panel="left">open left panel</a></p>
+						<p><a href="#" class="open-right-panel">open right panel</a></p>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nibh felis. Nunc consequat diam et tellus tempor gravida. Donec hendrerit aliquet risus, ut tempor purus dictum sit amet. Integer sit amet lacus eget ipsum pulvinar interdum. Proin semper turpis sed placerat dapibus. Sed iaculis id </p>
+					<div class="content-block">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nibh felis. Nunc consequat diam et tellus tempor gravida. Donec hendrerit aliquet risus, ut tempor purus dictum sit amet. Integer sit amet lacus eget ipsum pulvinar interdum. Proin semper turpis sed placerat dapibus. Sed iaculis id </p>
+					</div>
+					<div class="content-block-title">QiaPi</div>
+					<div class="content-block">
+						<div class="content-block-inner">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nibh felis. Nunc consequat diam et tellus tempor gravida. Donec hendrerit aliquet risus, ut tempor purus dictum sit amet. Integer sit amet lacus eget ipsum pulvinar interdum. Proin semper turpis sed placerat dapibus. Sed iaculis id </p>
+						</div>
+					</div>
+					<div class="content-block inset">
+						<div class="content-block-inner">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nibh felis. Nunc consequat diam et tellus tempor gravida. Donec hendrerit aliquet risus, ut tempor purus dictum sit amet. Integer sit amet lacus eget ipsum pulvinar interdum. Proin semper turpis sed placerat dapibus. Sed iaculis id </p>
+						</div>
+					</div>
+					<div class="content-block table-inset">
+						<div class="content-block-inner">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nibh felis. Nunc consequat diam et tellus tempor gravida. Donec hendrerit aliquet risus, ut tempor purus dictum sit amet. Integer sit amet lacus eget ipsum pulvinar interdum. Proin semper turpis sed placerat dapibus. Sed iaculis id </p>
+						</div>
+					</div>
+					<div class="content-block">
+						<div class="row no-gutter">
+							<div class="col-50">50%</div>
+							<div class="col-50">50%</div>
+						</div>
+						<div class="row no-gutter">
+							<div class="col-50">50%</div>
+							<div class="col-50">50%</div>
+						</div>
+					</div>
+					<div class="content-block">
+						<p><a href="#" class="alert-text">alert text</a></p>
+						<p><a href="#" class="alert-text-title">alert text title</a></p>
+						<p><a href="#" class="alert-text-title-callback">alert text title and callback</a></p>
+						<p><a href="#" class="confirm-ok">confirm</a></p>
+						<p><a href="#" class="prompt">prompt</a></p>
+						<p><a href="#" class="login-modal">login</a></p>
+						<p><a href="#" class="password-modal">password</a></p>
+						<p><a href="#" class="name">what is your name?</a></p>
+						<p><a href="#" class="open-preloader">open preLoader</a></p>
+						<p><a href="#" class="open-indicator">open Indicator</a></p>
+						<p><a href="#" class="three-button">three button</a></p>
+						<p><a href="#" class="slider">slider</a></p>
+						<p><a href="#" class="tab-modal">tab modal</a></p>
+						<p><a href="#" class="vertical-button">vertical</a></p>
+						<p><a href="#" class="open-popup" data-popup=".popup-about">open about</a></p>
+					</div>
 					<div class="content-block searchbar-not-found">
 						nothing found
 					</div>
