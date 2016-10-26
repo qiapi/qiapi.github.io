@@ -17,10 +17,6 @@
 </head>
 <body class="theme-green">
 <div class="panel-overlay"></div>
-<div class="panel panel-left panel-reveal">
-	<p>Left panel content here</p>
-	<p><a href="#" class="close-panel">close me</a></p>
-</div>
 <div class="panel panel-right panel-cover">
 	<p>Right panel content here</p>
 	<p><a href="#" class="panel-close">close me</a></p>
@@ -29,19 +25,53 @@
 <!--主视图-->
 	<div class="view view-main">
 		<div class="pages navbar-fixed toolbar-fixed">
-			<div data-page="index" class="page">
-				<div class="popup popup-about">
-					<div class="content-block">
-						<p>about</p>
-						<p><a href="#" class="close-popup">close popup</a></p>
-						<p>haha</p>
-					</div>
-				</div>
+			<div data-page="login" class="page">
 				<div class="navbar">
 					<div class="navbar-inner">
-						<div class="left adjust"><a href="#about" class="link">link</a></div>
+						<div class="center center_adjust">Your Kitchens</div>
+					</div>
+				</div>
+				<div class="page-content">
+					<div class="login">Login</div>
+					<div class="content-block">
+						<form class="list-block" id="login-form">
+							<ul>
+								<li>
+									<div class="item-content">
+										<div class="item-media"><i class="icon icon-form-name"></i></div>
+										<div class="item-inner">
+											<div class="item-input">
+												<input type="text" name="username" placeholder="Your name">
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="item-content">
+										<div class="item-media"><i class="icon icon-form-password"></i></div>
+										<div class="item-inner">
+											<div class="item-input">
+												<input type="password" name="password" placeholder="Password">
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<p class="buttons-row">
+								<a href="#index" class="button button-big button-fill button-raised color-green form-to-json">登录</a>
+								<a href="#" class="button button-big button-fill button-raised color-red">注册</a>
+							</p>
+						</form>
+					</div>
+					
+				</div>
+			</div>
+			<div data-page="index" class="page cached">
+				<div class="navbar">
+					<div class="navbar-inner">
+						<div class="left adjust"><a href="#about" class="link">About</a></div>
 						<div class="center">Your Kitchens</div>
-						<div class="right"><a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a></div>
+						<div class="right"><a href="#" class="link icon-only open-right-panel"><i class="icon icon-bars"></i></a></div>
 					</div>
 				</div>
 				<form class="searchbar searchbar-init" data-search-list=".list-block-search" data-search-in=".item-title">
@@ -52,56 +82,13 @@
 				</form>
 				<div class="searchbar-overlay"></div>
 				<div class="page-content">
-					<div class="content-block">
-						<p><a href="#" class="open-panel" data-panel="left">open left panel</a></p>
-						<p><a href="#" class="open-right-panel">open right panel</a></p>
-					</div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nibh felis. Nunc consequat diam et tellus tempor gravida. Donec hendrerit aliquet risus, ut tempor purus dictum sit amet. Integer sit amet lacus eget ipsum pulvinar interdum. Proin semper turpis sed placerat dapibus. Sed iaculis id </p>
-					<div class="content-block">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nibh felis. Nunc consequat diam et tellus tempor gravida. Donec hendrerit aliquet risus, ut tempor purus dictum sit amet. Integer sit amet lacus eget ipsum pulvinar interdum. Proin semper turpis sed placerat dapibus. Sed iaculis id </p>
-					</div>
-					<div class="content-block-title">QiaPi</div>
-					<div class="content-block">
-						<div class="content-block-inner">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nibh felis. Nunc consequat diam et tellus tempor gravida. Donec hendrerit aliquet risus, ut tempor purus dictum sit amet. Integer sit amet lacus eget ipsum pulvinar interdum. Proin semper turpis sed placerat dapibus. Sed iaculis id </p>
+					<div class="swiper-container swiper-init" data-speed="400" data-space-between="40" data-pagination=".swiper-pagination">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="img/ciguaxia.jpg" style="width:310px;height:100%;"></div>
+							<div class="swiper-slide"><img src="img/hulu.JPG" style="width:310px;height:100%;"></div>
+							<div class="swiper-slide"><img src="img/show1.jpg" style="width:310px;height:100%;"></div>
 						</div>
-					</div>
-					<div class="content-block inset">
-						<div class="content-block-inner">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nibh felis. Nunc consequat diam et tellus tempor gravida. Donec hendrerit aliquet risus, ut tempor purus dictum sit amet. Integer sit amet lacus eget ipsum pulvinar interdum. Proin semper turpis sed placerat dapibus. Sed iaculis id </p>
-						</div>
-					</div>
-					<div class="content-block table-inset">
-						<div class="content-block-inner">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nibh felis. Nunc consequat diam et tellus tempor gravida. Donec hendrerit aliquet risus, ut tempor purus dictum sit amet. Integer sit amet lacus eget ipsum pulvinar interdum. Proin semper turpis sed placerat dapibus. Sed iaculis id </p>
-						</div>
-					</div>
-					<div class="content-block">
-						<div class="row no-gutter">
-							<div class="col-50">50%</div>
-							<div class="col-50">50%</div>
-						</div>
-						<div class="row no-gutter">
-							<div class="col-50">50%</div>
-							<div class="col-50">50%</div>
-						</div>
-					</div>
-					<div class="content-block">
-						<p><a href="#" class="alert-text">alert text</a></p>
-						<p><a href="#" class="alert-text-title">alert text title</a></p>
-						<p><a href="#" class="alert-text-title-callback">alert text title and callback</a></p>
-						<p><a href="#" class="confirm-ok">confirm</a></p>
-						<p><a href="#" class="prompt">prompt</a></p>
-						<p><a href="#" class="login-modal">login</a></p>
-						<p><a href="#" class="password-modal">password</a></p>
-						<p><a href="#" class="name">what is your name?</a></p>
-						<p><a href="#" class="open-preloader">open preLoader</a></p>
-						<p><a href="#" class="open-indicator">open Indicator</a></p>
-						<p><a href="#" class="three-button">three button</a></p>
-						<p><a href="#" class="slider">slider</a></p>
-						<p><a href="#" class="tab-modal">tab modal</a></p>
-						<p><a href="#" class="vertical-button">vertical</a></p>
-						<p><a href="#" class="open-popup" data-popup=".popup-about">open about</a></p>
+						<div class="swiper-pagination"></div>
 					</div>
 					<div class="content-block searchbar-not-found">
 						nothing found

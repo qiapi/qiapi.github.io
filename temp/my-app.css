@@ -2,21 +2,10 @@
 	margin-right: auto;
 }
 
-.center_adjust {
-	margin-right: auto;
-}
-
 .searchbar-input input {
 	width: 100%;
 }
 
-.login {
-	margin: auto;
-	text-align: center;
-	font-size: 30px;
-	font-weight: bold;
-	color: green;
-}
 body.with-panel-left-cover .statusbar-overlay {
     background-color: #333;
 }

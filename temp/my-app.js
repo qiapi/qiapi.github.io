@@ -6,10 +6,6 @@ var mainView = myApp.addView('.view-main',{
 	domCache:true,
 	dynamicNavbar:true
 });
-$$('.form-to-json').on('click',function() {
-	var formData = myApp.formToJSON('#login-form');
-	alert(JSON.stringify(formData));
-});
 var mySearchbar = myApp.searchbar('.searchbar',{
 	searchList:'.list-block-search',
 	searchIn:'.item-title'
