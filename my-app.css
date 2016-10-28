@@ -28,3 +28,22 @@ div[class*="col-"] {
 	border: 1px solid #ddd;
 	padding: 5px;
 }
+
+.content-block-title {
+	font-size: 20px;
+	color: green;
+	font-family: 微软雅黑;
+	font-weight: bold;
+	line-height: 22px;
+	text-align: center;
+}
+
+.content-block-inner p {
+	font-size: 16px;
+	font-weight: bold;
+	font-family: 微软雅黑;
+}
+
+.about-page {
+	padding-top: 10px !important;
+}
