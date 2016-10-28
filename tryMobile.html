@@ -14,6 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="dist/css/framework7.material.colors.min.css">
 	<!--自定义样式-->
 	<link rel="stylesheet" type="text/css" href="my-app.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 </head>
 <body class="theme-green">
 <div class="panel-overlay"></div>
@@ -102,7 +103,7 @@
 							</ul>
 							<p class="buttons-row">
 								<a href="#index" class="button button-big button-fill button-raised color-green form-to-json">登录</a>
-								<a href="#" class="button button-big button-fill button-raised color-red">注册</a>
+								<a href="#register" class="button button-big button-fill button-raised color-red">注册</a>
 							</p>
 						</form>
 					</div>
@@ -205,14 +206,61 @@
 						<div class="content-block-title">关于“你的厨房”</div>
       					<div class="content-block-inner">
       						<p>这是一款在线厨艺交流软件。首先你可以进入“我的厨房”添加自己的菜谱，选择发布，就可以把您的菜谱共享给每一个使用本软件的用户。用户只要在本软件主页输入关键字即可搜索相应的菜谱。“厨友圈”类似微信朋友圈，你可以各种晒美食照片。如果您有各种问题或者意见建议，可以进入“反馈”页面给我们留下您的宝贵意见。</p>
-      						<a href="#index" class="back button color-red">go back to index</a>
+      						<a href="#index" class=" back button button-fill color-red">go back to index</a>
       					</div>
     				</div>	
 				</div>
 			</div>
-			<div class="page cached" data-page="second">
+			<div class="page cached" data-page="register">
 				<div class="page-content">
-					<p>here is second!</p>
+					<div class="login register">Register</div>
+					<div class="list-block">
+						<ul>
+							<li>
+								<div class="item-content">
+									<div class="item-media"><i class="icon icon-form-name"></i></div>
+									<div class="item-inner">
+										<div class="item-input">
+											<input type="text" name="name" placeholder="Input the username">
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="item-content">
+									<div class="item-media"><i class="icon icon-form-password"></i></div>
+									<div class="item-inner">
+										<div class="item-input">
+											<input type="text" name="name" placeholder="Input your password">
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="item-content">
+									<div class="item-media"><i class="icon icon-form-gender"></i></div>
+									<div class="item-inner">
+										<div class="item-input">
+											<select>
+												<option>Male</option>
+												<option>Female</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="item-content">
+									<div class="item-media"><i class="icon icon-form-email"></i></div>
+									<div class="item-inner">
+										<div class="item-input">
+											<input type="text" name="name" placeholder="Input your email">
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
 					<a href="#index" class="back">go back to index</a>
 				</div>
 			</div>

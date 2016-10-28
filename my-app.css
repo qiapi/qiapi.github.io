@@ -17,6 +17,11 @@
 	font-weight: bold;
 	color: green;
 }
+
+.register {
+	color: red;
+}
+
 body.with-panel-left-cover .statusbar-overlay {
     background-color: #333;
 }
