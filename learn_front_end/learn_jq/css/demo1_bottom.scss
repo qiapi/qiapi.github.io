@@ -1,0 +1,28 @@
+.footer {
+	display: flex;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 45px;
+}
+.footerItem {
+	border: 1px solid #424242;
+	flex: 1 1 auto;
+	text-align: center;
+	line-height: 45px;
+}
+
+$colorList:#3982e9,#e2e2e2,#e1ca56,#e6d39b;
+
+@for $i from 1 to 5 {
+  .NotActive-#{$i} {
+  background-color:black;
+  color:nth($colorList,$i);
+  }
+}
+@for $i from 1 to 5 {
+  .Active-#{$i} {
+  background-color:nth($colorList,$i);
+  color:black;
+  }
+}

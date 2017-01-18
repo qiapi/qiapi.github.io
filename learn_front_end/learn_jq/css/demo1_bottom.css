@@ -1,0 +1,46 @@
+.footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 45px; }
+
+.footerItem {
+  border: 1px solid #424242;
+  flex: 1 1 auto;
+  text-align: center;
+  line-height: 45px; }
+
+.NotActive-1 {
+  background-color: black;
+  color: #3982e9; }
+
+.NotActive-2 {
+  background-color: black;
+  color: #e2e2e2; }
+
+.NotActive-3 {
+  background-color: black;
+  color: #e1ca56; }
+
+.NotActive-4 {
+  background-color: black;
+  color: #e6d39b; }
+
+.Active-1 {
+  background-color: #3982e9;
+  color: black; }
+
+.Active-2 {
+  background-color: #e2e2e2;
+  color: black; }
+
+.Active-3 {
+  background-color: #e1ca56;
+  color: black; }
+
+.Active-4 {
+  background-color: #e6d39b;
+  color: black; }
+
+/*# sourceMappingURL=demo1_bottom.css.map */
