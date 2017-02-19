@@ -1,12 +1,14 @@
 {
+	"people":[
 	{
 		"name":"xiaoming",
 		"age":20,
 		"school":"middle-school"
-	}
+	},
 	{
 		"name":"xiaoLi",
 		"age":30,
 		"school":"primary-school"
 	}
+]
 }

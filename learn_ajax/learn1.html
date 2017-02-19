@@ -15,10 +15,10 @@
 	xmlhttp.onreadystatechange = function() {
 		if(xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 			var name = document.getElementsByClassName("name");
-			name.text = xmlhttp.responseText[0].name;
+			var person = xmlhttp.responseText;
 			console.log(xmlhttp.responseText);
-			console.log(xmlhttp.responseText[0]);
-			console.log(xmlhttp.responseText[0].name);
+			console.log(person.people);
+			console.log(person.people.name);
 		}
 
 	}
