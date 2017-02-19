@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+
+</head>
+<body>
+<div id="content"></div>
+<script type="text/javascript">
+	var xmlhttp = new XMLHttpRequest();
+	xmlhttp.onreadystatechange = function() {
+		if(xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+			var responseContent = xmlhttp.responseText;
+			var pargh = responseContent.getElementById("resCont").childNodes[0];
+			document.getElementById("content").innerHTML = pargh;
+		}
+
+	}
+	xmlhttp.open("GET","response.html",true);
+	xmlhttp.send();
+</script>
+</body>
+</html>
