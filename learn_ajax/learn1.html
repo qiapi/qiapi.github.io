@@ -5,13 +5,11 @@
 
 </head>
 <body>
-<div id="content">
-	<p class="name"></p>
-	<p class="age"></p>
-	<p class="school"></p>
-</div>
+<button class="btn">click</button>
+<div id="content"></div>
+<script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.js"></script>
 <script type="text/javascript">
-	var xmlhttp = new XMLHttpRequest();
+	/*var xmlhttp = new XMLHttpRequest();
 	xmlhttp.onreadystatechange = function() {
 		if(xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 			var name = document.getElementsByClassName("name");
@@ -23,7 +21,10 @@
 
 	}
 	xmlhttp.open("GET","mydata.json",true);
-	xmlhttp.send();
+	xmlhttp.send();*/
+	$(".btn").on("click",function() {
+		$("#content").load("response.html");
+	});
 </script>
 </body>
 </html>
