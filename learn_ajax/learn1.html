@@ -23,7 +23,14 @@
 	xmlhttp.open("GET","mydata.json",true);
 	xmlhttp.send();*/
 	$(".btn").on("click",function() {
-		$("#content").load("response.html #one");
+		$.getJSON("mydata.json",function(data) {
+			$("#content").empty();
+			var content = "";
+			$.each(data,function(itemIndex,item) {
+				content = content + "<div><p>姓名："+item.name+"</p><p>年龄："+item.age+"</p><p>学历："+item.school+"</p></div>";
+			});
+			$("#content").html(content);
+		});
 	});
 </script>
 </body>

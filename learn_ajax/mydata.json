@@ -1,5 +1,4 @@
-{
-	"people":[
+[
 	{
 		"name":"xiaoming",
 		"age":20,
@@ -11,4 +10,3 @@
 		"school":"primary-school"
 	}
 ]
-}
