@@ -21843,6 +21843,8 @@ var TaskBtn = function (_React$Component5) {
 					taskList.push(item);
 				});
 			});
+			console.log("click");
+			console.log(taskList);
 		}
 	}, {
 		key: 'render',
