@@ -1,0 +1,15 @@
+[{
+	"time":"8:00",
+	"event":"起床",
+	"isDone":true
+},
+{
+	"time":"10:00",
+	"event":"吃饭",
+	"isDone":true
+},
+{
+	"time":"12:00",
+	"event":"睡觉",
+	"isDone":false
+}]
