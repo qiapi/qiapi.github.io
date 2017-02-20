@@ -71,6 +71,8 @@ class TaskBtn extends React.Component {
 				taskList.push(item);
 			});
 		});
+		console.log("click");
+		console.log(taskList);
 	}
 	render() {
 		return(
