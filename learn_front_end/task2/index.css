@@ -7,6 +7,7 @@ html {
 }
 body {
 	background-color: #f5f5f5;
+	min-width: 13.333rem;
 }
 header {
 	height: 3.33rem;
@@ -21,13 +22,13 @@ header {
 	left: 0;
 	top: 0;
 }
-main {
+main .menu {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	margin-top: 4.5rem;
 }
-main div {
+main .menu>div {
 	width: 41%;
 	height: 8rem;
 	margin: 0.3rem;
