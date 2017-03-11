@@ -68,11 +68,48 @@ main div img {
 }*/
 .noshow {
 	display: none;
+	position: absolute;
+	top: 4.5rem;
 }
 .show {
-	width: 80%;
-	background-color: red;
+	width:100%;
+}
+.block {
+	width: 90%;
+	height: 5rem;
 	margin: 0 auto;
-	/*position: absolute;
-	top: 4.5rem;*/
+	border: 0.0667rem solid #eeeeee;
+	border-left: 0.333rem solid rgb(255,201,14);
+	border-radius: 0.133rem;
+	margin-bottom: 0.3rem;
+	box-shadow: 0 0.133rem 0.2rem rgba(117,117,17,0.3);
+	background-color: white;
+	padding: 0.5rem;
+}
+.menuBtn {
+	width: 4rem;
+	height: 2rem;
+	border: none;
+	background-color: rgba(0,0,0,0);
+	color: white;
+	cursor: pointer;
+	margin: 0.5rem;
+	position: absolute;
+	left: 0;
+}
+.remindTitle {
+	color: #424242;
+	font-size: 1rem;
+	font-weight: bold;
+	margin-bottom: 0.5rem;
+}
+.remindinform {
+	font-size: 0.8rem;
+	color: #424242;
+	margin-bottom: 0.5rem;
+}
+.remindDate {
+	font-size: 0.5rem;
+	color: rgb(181,230,29);
+	float: right;
 }
