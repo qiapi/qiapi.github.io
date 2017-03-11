@@ -3,7 +3,10 @@
 <head>
 <title>学委助手</title>
 <meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+    <!--iphone中safari顶端的状态条的样式black(黑色)-->
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
 <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
@@ -15,10 +18,12 @@
 		<div class="none"><img src="img/none.png"/><br>缺交作业</div>
 		<div class="subject"><img src="img/class.png"/><br>课表查询</div>
 	</div>
-	<div class="remindContent">a</div>
-	<div class="homeworkContent">b</div>
-	<div class="noneContent">c</div>
-	<div class="subjectContent">d</div>
+	<div class="remindContent noshow show"><div id="remindContent"></div><button>show</button></div>
+	<div class="homeworkContent noshow show"><button>show</button></div>
+	<div class="noneContent noshow show"><button>show</button></div>
+	<div class="subjectContent noshow show"><button>show</button></div>
 </main>
+<script src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
