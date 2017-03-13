@@ -56,7 +56,7 @@ main #index {
 	text-align: left;
 	padding: 30px;
 	font-family: 隶书;
-	font-size: 25px;
+	font-size: 30px;
 	margin-top: 20px;
 }
 #regulationBlock li {
@@ -107,7 +107,7 @@ main #index {
 	text-align: left;
 	padding: 30px;
 	font-family: 隶书;
-	font-size: 25px;
+	font-size: 45px;
 	margin-top: 20px;
 	color: white;
 	margin-bottom: 30px;
@@ -121,14 +121,14 @@ main #index {
 	display: inline-block;
 	padding: 20px;
 	font-family: 隶书;
-	font-size: 25px;
+	font-size: 45px;
 	color: white;
 	margin-top: 20px;
 }
 .answerNum {
 	display: inline-block;
-	width: 30px;
-	height: 30px;
+	width: 50px;
+	height: 50px;
 	border-radius: 4px;
 	text-align: center;
 	margin-right: 20px;
@@ -164,7 +164,7 @@ main #index {
 	text-align: center;
 }
 #correctNum {
-	font-size: 160px;
+	font-size: 180px;
 	color: #ff8096;
 
 }
@@ -182,7 +182,7 @@ main #index {
 	margin-left: 40px;
 }
 .restTime {
-	font-size: 40px;
+	font-size: 70px;
 	color: #ff8096;
 	font-family: 隶书;
 }
