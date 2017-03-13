@@ -127,7 +127,6 @@ function counterFn() {
 			checkAnswer();
 		}
 	},1000);
-	console.log("counterFn");
 }
 
 /*进入答题页*/
@@ -141,9 +140,7 @@ function answer() {
 		$(".restTime").remove();
 		$("#answerPage").append("<p class='restTime'>剩余答题时间：120</p>");
 		counterFn();
-		console.log("answerinner");
 	});
-	console.log("answerOuter");
 }
 
 /*查看规则*/
@@ -178,7 +175,6 @@ function addQuestion(index) {
 	$(".question").append(questionBlock);
 	chooseAnswer();
 	nextQuestion();
-	console.log("addQuestion"+index);
 }
 
 /*下一个问题*/
@@ -192,7 +188,6 @@ function nextQuestion() {
 		if(questionIndex===9) {
 			finishAnswer();
 		}
-		console.log("nextQuestionInner");
 	});
 }
 
@@ -223,7 +218,6 @@ function finishAnswer() {
 	$(".next10").click(function() {
 		yourAnswer.push(yourChoose);
 		checkAnswer();
-		console.log("finishAnswer");
 	});
 }
 
@@ -235,13 +229,11 @@ function checkAnswer() {
 			mark ++;
 		}
 	}
-	console.log("your mark is"+mark);
 	$("#answerPage").addClass("hide");
 	$("#result").removeClass("hide");
 	$("#correctNum").text(mark);
 	answerAgain();
 	backIndex();
-	console.log("checkAnswer");
 }
 
 /*更新变量状态*/
@@ -253,7 +245,6 @@ function renew() {
 	addQuestion(0);
 	questionIndex = 0;
 	pageNumberActive(questionIndex);
-	console.log("renew");
 }
 
 /*重新答题*/
@@ -264,8 +255,6 @@ function answerAgain() {
 		counterFn();
 		$("#result").addClass("hide");
 		$("#answerPage").removeClass("hide");
-		
-		console.log("answerAgain");
 	})
 }
 
@@ -275,7 +264,6 @@ function backIndex() {
 		renew();
 		$("#result").addClass("hide");
 		$("#index").removeClass("hide");
-		console.log("backIndex");
 	})
 }
 
