@@ -5,9 +5,6 @@ ul {
 	margin: 0;
 	padding: 0;
 }
-li {
-	list-style-type: none;
-}
 main #index {
 	width: 100%;
 	text-align: center;
@@ -80,6 +77,7 @@ main #index {
 }
 #answerPage .pageNumber {
 	clear: both;
+	list-style-type: none;
 }
 #answerPage .pageNumber li{
 	display: inline-block;
@@ -93,6 +91,7 @@ main #index {
 	color: rgb(126,206,244);
 	font-size: 30px;
 	box-shadow: 5px 5px 5px rgba(75,75,75,0.6);
+	list-style-type: none;
 }
 .active {
 	background-color: rgb(126,206,244) !important;
