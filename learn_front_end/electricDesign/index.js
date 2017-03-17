@@ -98,7 +98,7 @@ var restTime;
 var test = {};
 /*获取题目*/
 function getData() {
-	$.getJSON("data.php",function(data) {
+	$.getJSON("data.json",function(data) {
 		test = data;
 		console.log(test);
 	});
