@@ -4,7 +4,7 @@ var regulationContent=["我是第一天规则我是第一条规则我是第一�
 							"我是第3天规则我是第3天规则我是第3天规则我是第3天规则我是第3天规则",
 							"我是第4天规则我是第4天规则我是第4天规则我是第4天规则我是第4天规则"];
 /*题目*/							
-var test = {
+/*var test = {
 	question :[{
 		id:"0",
 		question:"the 1 question",
@@ -86,7 +86,7 @@ var test = {
 		answer_D:"...",
 		correct_answer:"1"
 	}]
-}
+}*/
 /*用到的变量：yourAnswer存放玩家答案，mark存放答对题目数，timer作答开始时间，counter计时器变量，restTime存放剩余时间*/
 var yourAnswer = [];
 var questionIndex = 0;
@@ -95,7 +95,14 @@ var mark = 0;
 var timer;
 var counter;
 var restTime;
-
+var test = {};
+/*获取题目*/
+function getData() {
+	$.getJSON("data.php",function(data) {
+		test = data;
+		console.log(test);
+	});
+}
 /*添加规则的内容*/
 function addRegulation() {
 	var ol = "<ol>";
@@ -132,6 +139,7 @@ function counterFn() {
 /*进入答题页*/
 function answer() {
 	$("#answerBtn").click(function() {
+		getData();
 		$("#index").addClass("hide");
 		$("#answerPage").removeClass("hide");
 		$($("#answerPage .pageNumber li")[0]).addClass("active");
@@ -209,6 +217,7 @@ function chooseAnswer() {
 			$(span[answerItem.index($(this))]).addClass("choosespan");
 			$(this).addClass("chooseAnswer");
 			yourChoose = answerItem.index($(this));
+			console.log(yourChoose);
 		})
 	}
 }
@@ -225,6 +234,7 @@ function finishAnswer() {
 function checkAnswer() {
 	clearInterval(counter);
 	for(var i = 0; i<10;i++) {
+		console.log(test.question[i].correct_answer);
 		if(yourAnswer[i]===parseInt(test.question[i].correct_answer)) {
 			mark ++;
 		}
@@ -250,6 +260,7 @@ function renew() {
 /*重新答题*/
 function answerAgain() {
 	$(".again").click(function() {
+		getData();
 		$(".restTime").text("剩余答题时间：120");
 		renew();
 		counterFn();
@@ -261,6 +272,7 @@ function answerAgain() {
 /*返回首页*/
 function backIndex() {
 	$(".backIndex").click(function() {
+		getData();
 		renew();
 		$("#result").addClass("hide");
 		$("#index").removeClass("hide");
